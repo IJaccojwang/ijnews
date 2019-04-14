@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+<div class="container-fluid">
+  <div class="row">
+    {%for sor in news_sources %}
+    <div class="col-md-3">
+      <div class="card">
+        <div class="card-body elegant-color white-text rounded-bottom">
+          <a class="activator waves-effect mr-4"><i class="fas fa-share-alt white-text"></i></a>
+          <h4 class="card-title">{{sor.name}}</h4>
+          <hr class="hr-light">
+          <p class="card-text white-text mb-4">{{sor.description|truncate(100) }}</p>
+          <a href="/source/{{sor.id}}" class="btn btn-primary">Go to source</a>
+        </div>
+      </div>
+      <div class="row">
+        <hr>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+{% endblock %}
