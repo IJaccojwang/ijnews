@@ -44,9 +44,10 @@ def search(article_name):
     article_name_format = "+".join(article_name_list)
     searched_articles = search_article(article_name_format)
     title = f'Search results for {article_name}'
+    name = article_name
     query_article = request.args.get('article_query')
 
     if query_article:
         return redirect(url_for('.search',article_name = query_article))
     else:
-        return render_template('search.html',title = title , news_articles = searched_articles)
+        return render_template('search.html',title = title,name = name , news_articles = searched_articles)
