@@ -1,11 +1,9 @@
 # IJNews
 
 ## Description
-
-#### This application allows users to securely store their usernames and passwords for various accounts such as social media accounts and email accounts,  03/2019
-#### By **Ian Jaccojwang**
 ## Description
-This is a web application that displays a list of various news sources from which a user can access news. A user can search for news articles of their liking as well and view them on the source website. The app makes use of the [News API](https://newsapi.org/).
+####This is a web application that displays a list of various news sources from which a user can access news. A user can search for news articles of their liking as well and view them on the source website. The app makes use of the [News API](https://newsapi.org/).
+#### By **Ian Jaccojwang**
 The user can:
 * See various news sources
 * View articles from a news source they like
