@@ -10,9 +10,9 @@
     <!-- Title -->
     <h1 class="card-title"><strong>IJNEWS</strong></h1>
     <!-- Subtitle -->
-    <h6 class="font-weight-bold indigo-text py-2">Latest news, Variety, all in one place</h6>
+    <h3 class="font-weight-bold indigo-text py-2">Latest news, Variety, all in one place</h3>
     <!-- Text -->
-    <p class="card-text">Welcome to IJNews. Feel free to browse our wide variety of news sources for the most recent snd reliable news articles. Our database provides artticles from a wide variety of sources. Find those listed below:</p>
+    <h4 class="text" id="card-text">Welcome to IJNews. Feel free to browse our wide variety of news sources for the most recent snd reliable news articles. Our database provides artticles from a wide variety of sources. Find those listed below:</h4>
 
     <!-- Card image -->
     <div class="view view-cascade overlay">
@@ -57,9 +57,9 @@
       <div class="card">
         <div class="card-body elegant-color white-text rounded-bottom">
           <a class="activator waves-effect mr-4"><i class="fas fa-share-alt white-text"></i></a>
-          <h4 class="card-title">{{sor.name}}</h4>
+          <h2 class="card-title">{{sor.name}}</h2>
           <hr class="hr-light">
-          <p class="card-text white-text mb-4">{{sor.description|truncate(100) }}</p>
+          <p class=" white-text mb-4">{{sor.description|truncate(100) }}</p>
           <a href="/source/{{sor.id}}" class="btn btn-primary">Go to source</a>
         </div>
       </div>
