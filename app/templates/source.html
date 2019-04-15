@@ -32,12 +32,12 @@
         </a>
       </div>
       <div class="card-body elegant-color white-text rounded-bottom">
-        <h4 class="card-title">{{art.title | truncate(100)}}</h4>
+        <h5 class="card-title">{{art.title | truncate(100)}}</h5>
         {%if art.author%}
-        <h5> ~ {{art.author | truncate(100)}}</h5>
+        <p> ~ {{art.author | truncate(100)}}</p>
         {% endif %}
         <hr class="hr-light">
-        <p class=" white-text mb-4">{{art.description | truncate(200)}}.</p>
+        <p class="card-text white-text mb-4">{{art.description | truncate(200)}}.</p>
         <p>{{art.time}}</p>
         <!-- Link -->
         <a href="{{art.url}}" class="white-text d-flex justify-content-end"><h5>Read more <i class="fas fa-angle-double-right"></i></h5></a>
